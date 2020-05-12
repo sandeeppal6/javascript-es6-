@@ -1,23 +1,18 @@
 {
   "name": "javascript-es6-",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "babel NullCollesing.js -d dist",
+    "start": "npm run build && node dist/NullCollesing.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sandeeppal6/javascript-es6-.git"
-  },
-  "keywords": [],
   "author": "Sandeep pal",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sandeeppal6/javascript-es6-/issues"
-  },
-  "homepage": "https://github.com/sandeeppal6/javascript-es6-#readme",
   "dependencies": {
     "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
   }
 }
